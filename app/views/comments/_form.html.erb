@@ -1,0 +1,5 @@
+<%= form_with(model: [commentable, Comment.new],local: true) do |form| %>
+  <%= form.label :content %><br/>
+  <%= form.text_area :content %> <br/>
+  <%= form.submit class:"btn btn-primary" %>
+<% end %>

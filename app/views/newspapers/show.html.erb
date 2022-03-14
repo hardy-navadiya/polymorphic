@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @newspaper.name %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @newspaper.author %>
+</p>
+
+<%= render partial: "comments/form", locals: {commentable: @newspaper} %>
+
+<%= link_to 'Edit', edit_newspaper_path(@newspaper) %> |
+<%= link_to 'Back', newspapers_path %>

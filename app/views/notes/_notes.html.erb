@@ -1,0 +1,6 @@
+<h3>Notes</h3>
+
+<% notable.notes.each do |note| %>
+	<%= note.content %>
+	<%= time_ago_in_words note.created_at %>
+<% end %>
